@@ -1,0 +1,328 @@
+
+
+/* ----------  _  _  __  ---------- */
+/* ---------- |   |_ |_  ---------- */
+/* ---------- |_  _| __|  ---------- */
+
+/* ------- MAIN ------- */
+
+
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 10px 30px;
+}
+.nav-image{
+    width: 150px;
+    height: 50px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    margin-right: 70px;
+    font-weight: 500;
+    font-family: 'Prompt', sans-serif;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 80px;
+}
+.navbar a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+.sign{
+    display: flex;
+}
+.sign p{
+    margin-right: 20px;
+    font-family: 'Prompt', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.img-container{
+    background-image: url(background/background-shadow.svg);
+    height: 500px;
+    width: 100vw;
+    background-size: cover;
+}
+.text h1{
+    color: white;
+    font-size: 45px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 375;
+}
+.text p{
+    color: white;
+    width: 700px;
+    margin-top: 10px;
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+}
+.text{
+    position: relative;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cardview-container{
+    box-sizing: border-box;
+    position: absolute;
+    padding: 10% 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 100px;
+    
+}
+.card1{
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    padding: 15px;
+}
+
+.card1 img{
+    width: 100px;
+    position: absolute;
+    height: 80px;
+    margin-top: -16px;
+    margin-left: 226px;
+}
+.card1 a{
+    background-image: url(background/cinnamon.jpeg);
+    background-size: contain;
+    width: 100vh;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.cardviewleft1 button{
+    width: 153px;
+    height: 35px;
+    color: white;
+    border-radius: 5px;
+    background:#00AA95;
+    border: none;
+}
+.cardviewleft1 h1{
+    font-weight: 500;
+}
+.cardviewleft1 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 12px;
+}
+.cardviewleft1 .desc{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cardviewleft1 a{
+    position: absolute;
+    width: 153px;
+    height: 35px;
+    color: white;
+    border-radius: 5px;
+    background:#00AA95;
+    border: none;
+    transform: translateX(-10%);
+}
+.cardviewleft1 button p{
+    display: flex;
+    margin: 10px;
+    margin-top: 5px;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size:15px;
+}
+.card1:hover{
+    transition: .5s;
+    transform: scale(1.05);
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, .25);
+    border: none;
+    background: #00CC76;
+}
+.cardviewleft1 button:hover{
+    background: #A5E887;
+    transition: .5s;
+    color: #00AA95;
+}
+.card2{
+    margin-left: 250px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.card2 a{
+    background-image: url(background/cinnamon.jpeg);
+    background-size: contain;
+    width: 100vh;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.cardviewleft2 h1{
+    font-weight: 500;
+}
+.cardviewleft2 button{
+    width: 153px;
+    height: 35px;
+    color: white;
+    border-radius: 5px;
+    background:#00AA95;
+    border: none;
+}
+.cardviewleft2 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 12px;
+}
+.cardviewleft2 .desc{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cardviewleft2 button p{
+    display: flex;
+    margin: 10px;
+    margin-top: 5px;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size:15px;
+}
+.card2:hover{
+    transition: .5s;
+    transform: scale(1.05);
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, .25);
+    border: none;
+    background: #00CC76;
+}
+.cardviewleft2 button:hover{
+    background: #A5E887;
+    transition: .5s;
+    color: #00AA95;
+}
+
+.nextbutton{
+    width: 300px;
+    height: 45px;
+    border: 1px solid black;
+    background: #00AA95;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 5px;
+    transform: translate(80%,50%);
+}
+
+.nextbutton:hover{
+    background: #A5E887;
+    transition: .5s;
+    color: #00AA95;
+    border: none;
+}
+
+.footer{
+    height: 400px;
+    width: 100%;
+    background-image: radial-gradient(circle at 50% 200%, #A5E887 100px, #00AA95 600px);
+    box-sizing: border-box;
+    padding: 90px 11% 350px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.con{
+    margin-bottom: 60px;
+    font-size: 17px;
+}
+
+.contact-container{
+    display: flex;
+}
+
+.umar, .khalish, .rifqi{
+    margin-right: 70px;
+    width: 180px;
+}
+
+.umar h3, .khalish h3, .rifqi h3{
+    font-weight: 600;
+    font-size: 17px;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.umar a, .khalish a, .rifqi a{
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.umar a::after, .khalish a::after, .rifqi a::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 7px;
+    transition: 0.5s;
+}
+
+.umar a:hover::after, .khalish a:hover::after, .rifqi a:hover::after{
+    width: 100%;
+    transition: 0.5s;
+    background-color: #A5E887;
+}
+
+.umar a:hover, .khalish a:hover, .rifqi a:hover{
+    color: #A5E887;
+    transition: 0.5s;
+}
+
+.fa{
+    margin-right: 10px;
+}
+
+.copyright{
+    font-weight: 300;
+    margin-top: 70px;
+}
+
+
+
+
+
+
